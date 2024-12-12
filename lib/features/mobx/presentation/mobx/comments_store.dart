@@ -9,12 +9,10 @@ import '../../../../core/resources/location/data_state.dart';
 
 part 'comments_store.g.dart';
 
-class CommentsStore = _CommentsStoreBase with $_CommentsStore;
-
-abstract class _CommentsStoreBase with Store {
+abstract class _CommentsStore with Store {
   final CommentsUseCases _commentsUseCases;
 
-  _CommentsStoreBase(this._commentsUseCases);
+  _CommentsStore(this._commentsUseCases);
   @observable
   ObservableList<CommentEntity> comments = ObservableList<CommentEntity>();
 
@@ -60,3 +58,6 @@ abstract class _CommentsStoreBase with Store {
     comments.clear();
   }
 }
+
+// ignore: library_private_types_in_public_api
+class CommentsStore = _CommentsStore with _$CommentsStore;
