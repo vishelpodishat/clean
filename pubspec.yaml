@@ -43,6 +43,15 @@ dependencies:
   flutter_riverpod: ^2.3.7
   sqflite: ^2.2.8+4
   path: ^1.8.2
+  drift: ^2.8.0
+  blocs:
+    path: packages/blocs
+  repositories:
+    path: packages/repositories
+  cache:
+    path: packages/cache
+  models:
+    path: packages/models
 
 dev_dependencies:
   flutter_test:
