@@ -54,6 +54,7 @@ dependencies:
     path: packages/models
   firebase_core: ^3.8.1
   firebase_messaging: ^15.1.6
+  provider: ^6.1.2
 
 dev_dependencies:
   flutter_test:
